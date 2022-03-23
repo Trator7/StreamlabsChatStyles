@@ -37,6 +37,6 @@ El color de fondo personalizable y chat se ajusta al tamaño de la ventana que a
 
 Os dejo tambien la página de <a href="https://fonts.google.com/">fuentes de Google</a> que podeis usar de forma sencilla. 
 
-<h1>Ejemplo del chat</h1>
+<h2>Ejemplo del chat</h2>
 
 ![ejem1](https://user-images.githubusercontent.com/15488788/159807337-2831f769-1bad-48c6-9d87-ad6572919612.PNG)
