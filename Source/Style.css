@@ -23,7 +23,7 @@ body {
 	color: white; /*{text_color} streamlabs parameter*/
 	word-wrap: break-word;
 	word-break: normal;
-	text-align: left;
+	text-align: justify;
 }
 
 #marco {

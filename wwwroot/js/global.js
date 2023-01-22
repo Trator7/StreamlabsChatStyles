@@ -15,7 +15,7 @@ function openTab(elem, tabName) {
 }
 
 function copyToClipboard(elem) {
-	var streamlabStyle = elem.parentElement.parentElement;
+	var streamlabStyle = elem.parentElement;
 	var allTabs = streamlabStyle.querySelectorAll(".tabcontent");
 	for(var i = 0; i < allTabs.length; i++){
 		if(allTabs[i].hidden == false)
