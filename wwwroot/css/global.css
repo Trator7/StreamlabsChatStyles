@@ -29,9 +29,7 @@ h1, h2, h3 {
 
 .tabSize {
   overflow: scroll;
-  max-height: 650px;
   min-height: 650px;
-  max-width: 350px;
   min-width: 350px;
 }
 

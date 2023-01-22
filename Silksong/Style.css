@@ -1,0 +1,102 @@
+/* Fuente de texto importada de Google para emplear posteriormente */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+html,body {
+	overflow: hidden;
+	min-height: 1200px;
+	max-height: 1200px;
+	min-width: 600px;
+	max-width: 600px;
+
+	/* Dev testing */
+	/*background-color: blue;*/ /*{background_color}; streamLabs parameter */
+	
+	/* Text properties */
+	font-family: 'Roboto';
+	text-shadow: 3px 3px 5px rgb(0, 0, 0), 0px 0px 0px #000;
+	font-weight: 700;
+	font-size: auto; /*{font_size}; streamLabs parameter  */
+	line-height: 1.5em;
+	color: white; /*{text_color} streamlabs parameter*/
+	word-wrap: break-word;
+	word-break: normal;
+	text-align: justify;
+}
+
+.marco {
+	position: absolute;
+	overflow: hidden;
+	left: 0;
+	bottom: 50px;
+	min-height: 850px;
+	max-height: 850px;
+	min-width: 600px;
+	max-width: 600px;
+}
+
+.textBlock {
+	display: inline-block;
+}
+
+.badges, .name, .message {
+	display: inline;
+}
+
+#log>div {
+	margin: 4px;
+	animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease 10s forwards; /* {message_hide_delay} streamLabs parameter */
+	-webkit-animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease 10s forwards; /* {message_hide_delay} streamLabs parameter */
+}
+
+#log>div.deleted {
+	visibility: hidden;
+}
+
+#log .emote {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	padding: 0.4em 0.2em;
+	position: relative;
+}
+
+.emote img {
+	height: 1em;
+	opacity: 0;
+}
+
+.badge {
+	position: relative;
+	height: 1em;
+	padding-bottom: 0.2em;
+	margin-right: auto;
+	vertical-align: middle;
+}
+
+.logoTop, .logoBottom {
+	position: relative;
+	transform: translateX(-8px);
+	min-width: 600px;
+	max-width: 600px;
+}
+
+.logoTop {
+	top: -5px;
+}
+
+.logoBottom {
+	top: 795px;
+}
+
+.fondo {
+	position: absolute;
+	overflow: hidden;
+	left: 0px;
+	top: 45px;
+	min-height: 900px;
+	max-height: 900px;
+	min-width: 600px;
+	max-width: 600px;
+	background-color: rgba(143, 143, 143, 0.384);
+	border-radius: 100px;
+}
