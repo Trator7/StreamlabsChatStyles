@@ -1,114 +1,103 @@
 /* Fuente de texto importada de Google para emplear posteriormente */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
-* {
-    box-sizing: border-box;
-}
-
-.bac, html, body {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-.bac {
-  /* Color de fondo aplicable al tamaño de la ventana
-     Formato RGBA con valores entre 0 y 1  */
-  background: rgba(0,0,0,0);
-}
-
 body {
-    /*Text-shadow es el sombreado de fondo del texto para mejorar su legibilidad */
-    text-shadow: 3px 3px 5px #000, 0px 0px 0px #000;
-    /* Este background usa el color que se puede seleccionar en la opcion de 
-       Streamlabs "Background Color", pero no sera visible en stream, es solo para pruebas */
-    background: {background_color};
-    /* Fuente de texto que se está empleando, en el ejemplo se emplea la 
-       importada de Google en la primera linea*/
-    font-family: 'Roboto';
-    font-weight: 700; /* Negrita del texto */
-    /* Tamanyo de la letra segun opcion de Streamlabs "Font Size" podeis empezar con 22px*/
-    font-size: {font_size};
-    line-height: 1.5em; /* Distancia entre lineas*/
-    color: {text_color}; /* Color del texto segun opcion de Streamlabs "Text Color" */
+	overflow: hidden;
+	min-height: 100vh;
+	height: 100vh;
+	max-height: 100vh;
+
+	min-width: 100vw;
+	width: 100vw;
+	max-width: 100vw;
+
+	/* Dev testing */
+	/*background-color: blue;*/ /*{background_color}; streamLabs parameter */
+	
+	/* Text properties */
+	font-family: 'Roboto';
+	text-shadow: 3px 3px 5px rgb(0, 0, 0), 0px 0px 0px #000;
+	font-weight: 700;
+	font-size: auto; /*{font_size}; streamLabs parameter  */
+	line-height: 1.5em;
+	color: white; /*{text_color} streamlabs parameter*/
+	word-wrap: break-word;
+	word-break: normal;
+	text-align: left;
 }
 
-#log>div {
-    position:relative;
-    width:100%;
-    animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
-    -webkit-animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+#marco {
+	position: absolute;
+	overflow: hidden;
+	bottom: 0;
+	min-height: 98%;
+	max-height: 98%;
+	min-width: 98%;
+	max-width: 98%;
+	border: 4px solid;
+	border-radius: 10px;
+	background-color: rgba(87, 87, 87, 0.685);
+	vertical-align: bottom;
+	animation: highlight 4s infinite;
+	-webkit-animation: highlight 4s infinite;
 }
 
-.colon {
-    display: none;
+@keyframes highlight {
+	0% {
+		border-color:  rgb(0, 100, 104);
+	}
+	25% {
+		border-color:  rgb(1, 130, 134);
+	}
+	50% {
+		border-color:  rgb(15, 158, 163);
+	}
+	75% {
+		border-color:  rgb(1, 130, 134);
+	}
+	100% {
+		border-color: rgb(0, 100, 104);
+	}
+}
+
+.badges, .name, .message {
+	display: inline;
 }
 
 #log {
-    display: table;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0.0em 0.0em 0.0em 0.3em;
-    width: 100%;
-    table-layout: fixed;
+	position: absolute;
+	bottom: 0;
+	min-width: 100%;
+	max-width: 100%;
 }
 
 #log>div {
-    display: inline-block;
-    border: 5px solid;
+	margin: 4px;
+	animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease 10s forwards; /* {message_hide_delay} streamLabs parameter */
+	-webkit-animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease 10s forwards; /* {message_hide_delay} streamLabs parameter */
 }
 
 #log>div.deleted {
-    visibility: hidden;
+	visibility: hidden;
 }
 
 #log .emote {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    padding: 0.4em 0.2em;
-    position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	padding: 0.4em 0.2em;
+	position: relative;
 }
 
-#log .emote img {
-    display: inline-block;
-    height: 1em;
-    opacity: 0;
-}
-
-#log .message, #log .meta {
-    vertical-align: top;
-    padding-bottom: 0.1em;
-}
-
-#log .cell {
-  display: table-row;
-  width: 100%;
-  text-align: left;
-}
-
-#log .meta {
-  vertical-align: middle;
-  text-align: left;
-  padding-top: 5px;
-}
-
-#log .message {
-    word-wrap: break-word;
-    word-break: normal;
-    text-align: left;
+.emote img {
+	height: 1em;
+	opacity: 0;
 }
 
 .badge {
-    display: inline-block;
-    margin-right: 0.1em;
-    position: relative;
-    height: 1em;
-    vertical-align: middle;
-    top: -0.1em;
-}
-
-.name {
-    display: inline;
+	position: relative;
+	height: 1em;
+	padding-bottom: 0.2em;
+	margin-right: auto;
+	vertical-align: middle;
 }
