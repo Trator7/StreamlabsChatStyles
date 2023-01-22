@@ -35,30 +35,7 @@ body {
 	max-height: 95%;
 	min-width: 95%;
 	max-width: 95%;
-	border: 4px solid;
-	border-radius: 10px;
-	background-color: rgba(87, 87, 87, 0.685);
 	vertical-align: bottom;
-	animation: highlight 4s infinite;
-	-webkit-animation: highlight 4s infinite;
-}
-
-@keyframes highlight {
-	0% {
-		border-color:  rgb(0, 100, 104);
-	}
-	25% {
-		border-color:  rgb(1, 130, 134);
-	}
-	50% {
-		border-color:  rgb(15, 158, 163);
-	}
-	75% {
-		border-color:  rgb(1, 130, 134);
-	}
-	100% {
-		border-color: rgb(0, 100, 104);
-	}
 }
 
 .textBlock {

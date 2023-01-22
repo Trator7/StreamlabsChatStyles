@@ -37,6 +37,7 @@ body {
 	max-width: 95%;
 	border: 4px solid;
 	border-radius: 10px;
+	background-color: rgba(87, 87, 87, 0.685);
 	vertical-align: bottom;
 	animation: highlight 4s infinite;
 	-webkit-animation: highlight 4s infinite;
