@@ -1,11 +1,6 @@
-/* Fuente de texto importada de Google para emplear posteriormente */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-
-body {
-	min-height: 100vh;
-	height: 100vh;
-	max-height: 100vh;
-	background-color: aquamarine;
+.bodyStyle {
+	min-width: 1600px;
+  overflow: scroll;
 }
 
 /* Style the tab */
@@ -17,11 +12,15 @@ body {
   background-color: #f1f1f1;
 }
 
-code {
+.tabSize {
+  overflow: scroll;
   max-height: 650px;
   min-height: 650px;
   max-width: 400px;
   min-width: 400px;
+}
+
+code {
   overflow: scroll;
 }
 
@@ -49,10 +48,6 @@ code {
 
 /* Style the tab content */
 .tabcontent {
-  max-height: 650px;
-  min-height: 650px;
-  max-width: 400px;
-  min-width: 400px;
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
@@ -68,4 +63,12 @@ code {
 	font-family: arial;
 	color: #f7f7f7;
 	font-weight: bold;
+}
+
+iframe {
+  max-height: 600px;
+  min-height: 600px;
+  max-width: 350px;
+  min-width: 350px;
+  margin: 5px;
 }

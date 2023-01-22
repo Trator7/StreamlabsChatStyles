@@ -21,16 +21,20 @@ function copyToClipboard(elem) {
 		if(allTabs[i].hidden == false)
 		{
 			const el = document.createElement("textarea");
-			var txt = allTabs[i].innerHTML;
+			/*var txt = allTabs[i].innerHTML;
 			txt = txt.replaceAll('&lt;', '<');
 			txt = txt.replaceAll('&gt;', '>');
 			txt = txt.replaceAll('<br>', '');
 			txt = txt.replaceAll('                    ', '');
-			el.value = txt;
+			el.value = txt;*/
+
+			fetch(allTabs[i].src)
+  			.then(response => el.value = response.text());
+
 			document.body.appendChild(el);
 			el.select();
 			document.execCommand("copy");
-			document.body.removeChild(el);
+			document.body.removeChild(el);  
 		}
 	}
 }
