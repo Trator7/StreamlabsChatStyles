@@ -143,15 +143,28 @@
                 <div class="col-4 mx-auto">
                     <h3>Silksong</h3>
                     <div class="tab">
+                        <button class="tablinks active" onclick="openTab(this, 'HTML')">HTML</button>
+                        <button class="tablinks" onclick="openTab(this, 'CSS')">CSS</button>
+                        <button class="tablinks" onclick="openTab(this, 'JS')">JS</button>
+                    </div>
+                    <embed id="HTML" class="tabcontent tabSize" src="Silksong/Structure.html"></embed>
+                    <embed id="CSS" class="tabcontent tabSize" src="Silksong/Style.css" hidden></embed>
+                    <embed id="JS" class="tabcontent tabSize" src="Silksong/Logic.js" hidden></embed>
+                    <button class="btn btn-primary btn-sm copyBtn" type="button" onclick="copyToClipboard(this)">Copy</button>
+                </div>
+
+                <div class="col-4 mx-auto">
+                    <h3>+ Fondo</h3>
+                    <div class="tab">
                         <button class="tablinks active" onclick="openTab(this, 'Preview')">Preview</button>
                         <button class="tablinks" onclick="openTab(this, 'HTML')">HTML</button>
                         <button class="tablinks" onclick="openTab(this, 'CSS')">CSS</button>
                         <button class="tablinks" onclick="openTab(this, 'JS')">JS</button>
                     </div>
-                    <img id="Preview" class="tabcontent tabSize" src="Silksong/Images/preview.PNG"/>
-                    <embed id="HTML" class="tabcontent tabSize" src="Silksong/Structure.html" hidden></embed>
-                    <embed id="CSS" class="tabcontent tabSize" src="Silksong/Style.css" hidden></embed>
-                    <embed id="JS" class="tabcontent tabSize" src="Silksong/Logic.js" hidden></embed>
+                    <img id="Preview" class="tabcontent tabSize" src="SilksongBackground/Images/preview.PNG"/>
+                    <embed id="HTML" class="tabcontent tabSize" src="SilksongBackground/Structure.html" hidden></embed>
+                    <embed id="CSS" class="tabcontent tabSize" src="SilksongBackground/Style.css" hidden></embed>
+                    <embed id="JS" class="tabcontent tabSize" src="SilksongBackground/Logic.js" hidden></embed>
                     <button class="btn btn-primary btn-sm copyBtn" type="button" onclick="copyToClipboard(this)">Copy</button>
                 </div>
 
