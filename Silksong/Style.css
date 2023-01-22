@@ -3,10 +3,10 @@
 
 html,body {
 	overflow: hidden;
-	min-height: 1200px;
-	max-height: 1200px;
-	min-width: 600px;
-	max-width: 600px;
+	min-height: 1300px;
+	max-height: 1300px;
+	min-width: 700px;
+	max-width: 700px;
 
 	/* Dev testing */
 	/*background-color: blue;*/ /*{background_color}; streamLabs parameter */
@@ -23,15 +23,24 @@ html,body {
 	text-align: justify;
 }
 
-.marco {
+#log, #marco {
+	min-width: 550px;
+	max-width: 550px;
+}
+
+#marco {
 	position: absolute;
 	overflow: hidden;
-	left: 0;
-	bottom: 50px;
-	min-height: 850px;
-	max-height: 850px;
-	min-width: 600px;
-	max-width: 600px;
+	left: 20px;
+	bottom: 30px;
+	min-height: 815px;
+	max-height: 815px;
+	padding: 10px;
+}
+
+#log {
+	position: absolute;
+	bottom: 0;
 }
 
 .textBlock {
@@ -43,7 +52,6 @@ html,body {
 }
 
 #log>div {
-	margin: 4px;
 	animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease 10s forwards; /* {message_hide_delay} streamLabs parameter */
 	-webkit-animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease 10s forwards; /* {message_hide_delay} streamLabs parameter */
 }
@@ -81,18 +89,20 @@ html,body {
 }
 
 .logoTop {
-	top: -5px;
+	top: 0px;
+	left: 25px;
 }
 
 .logoBottom {
-	top: 795px;
+	top: 800px;
+	left: 25px;
 }
 
 .fondo {
 	position: absolute;
 	overflow: hidden;
-	left: 0px;
-	top: 45px;
+	left: 25px;
+	top: 50px;
 	min-height: 900px;
 	max-height: 900px;
 	min-width: 600px;
