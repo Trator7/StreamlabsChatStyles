@@ -96,3 +96,7 @@ iframe {
   background-color: rgba(221, 221, 221, 0.445);
   max-width: 800px;
 }
+
+.tablinks {
+  color: white;
+}
