@@ -41,7 +41,7 @@ function cleanText(textType, text){
 	var cleanedTxt = "";
 	switch(textType) {
 		case "HTML":
-			cleanedTxt = text.replaceAll(new RegExp("(\\t){5}.*\\n","g"), "");
+			cleanedTxt = text.replaceAll(new RegExp("(\\t){7}.*\\n","g"), "");
 			break;
 		case "CSS":
 			cleanedTxt = text;
