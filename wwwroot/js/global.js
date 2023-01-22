@@ -20,12 +20,13 @@ function copyToClipboard(elem) {
 	for(var i = 0; i < allTabs.length; i++){
 		if(allTabs[i].hidden == false)
 		{			
+			var idText = allTabs[i].id;
 			fetch(allTabs[i].src)
 			.then(res => res.text())
 			.then(data => 
 			{
 				const el = document.createElement("textarea");
-				el.value = cleanText(allTabs[i].id, data)
+				el.value = cleanText(idText, data)
 
 				document.body.appendChild(el);
 				el.select();
