@@ -1,27 +1,46 @@
-.bodyStyle {
-	min-width: 1600px;
-  overflow: scroll;
+body, html {
+  width: 100%;
+  min-height: 100%;
+  min-width: 1200px;
+
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-repeat: no-repeat;
+  padding-left: 10px;
+}
+
+h1, h2, h3 {
+  color: white;
+}
+.row {
+  max-width: 1150px;
+}
+
+#styleBoard {
+  background-color: blue;
 }
 
 /* Style the tab */
 .tab {
-  max-width: 400px;
-  min-width: 400px;
+  max-width: 350px;
+  min-width: 350px;
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: #f1f1f1;
 }
 
 .tabSize {
   overflow: scroll;
   max-height: 650px;
   min-height: 650px;
-  max-width: 400px;
-  min-width: 400px;
+  max-width: 350px;
+  min-width: 350px;
 }
 
 code {
   overflow: scroll;
+}
+
+.copyBtn {
+  display: block;
 }
 
 /* Style the buttons inside the tab */
@@ -43,7 +62,7 @@ code {
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: rgba(204, 204, 204, 0.61);
 }
 
 /* Style the tab content */
@@ -71,4 +90,9 @@ iframe {
   max-width: 350px;
   min-width: 350px;
   margin: 5px;
+}
+
+.texto {
+  background-color: rgba(221, 221, 221, 0.445);
+  max-width: 800px;
 }
