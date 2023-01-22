@@ -45,6 +45,19 @@ function cleanText(textType, text){
 			break;
 		case "CSS":
 			cleanedTxt = text;
+			cleanedTxt = 
+			text.replace(
+				"font-size: auto; /*{font_size}; streamLabs parameter  */",
+				"font-size: {font_size};"
+			);
+			cleanedTxt = cleanedTxt.replace(
+				"color: white; /*{text_color} streamlabs parameter*/",
+				"color: {text_color};"
+			);
+			cleanedTxt = cleanedTxt.replaceAll(
+				"fadeOut 0.5s ease 10s forwards; /* {message_hide_delay} streamLabs parameter */",
+				"fadeOut 0.5s ease {message_hide_delay} forwards; "
+			);
 			break;
 		case "JS":
 			cleanedTxt = text;
