@@ -61,6 +61,10 @@ body {
 	}
 }
 
+.textBlock {
+	display: inline-block;
+}
+
 .badges, .name, .message {
 	display: inline;
 }
