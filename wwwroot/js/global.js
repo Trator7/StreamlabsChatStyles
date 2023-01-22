@@ -25,7 +25,8 @@ function copyToClipboard(elem) {
 			.then(data => 
 			{
 				const el = document.createElement("textarea");
-				el.value = data;
+				el.value = cleanText(allTabs[i].id, data)
+
 				document.body.appendChild(el);
 				el.select();
 				document.execCommand("copy");
@@ -33,4 +34,22 @@ function copyToClipboard(elem) {
 			});
 		}
 	}
+}
+
+function cleanText(textType, text){
+	var cleanedTxt = "";
+	switch(textType) {
+		case "HTML":
+			cleanedTxt = text.replaceAll(new RegExp("(\\t){5}.*\\n","g"), "");
+			break;
+		case "CSS":
+			cleanedTxt = text;
+			break;
+		case "JS":
+			cleanedTxt = text;
+			break;
+		  default:
+			cleanedTxt = text;
+	}
+	return cleanedTxt;
 }
