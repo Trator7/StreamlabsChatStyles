@@ -25,16 +25,18 @@ function copyToClipboard(elem) {
 			txt = txt.replaceAll('&lt;', '<');
 			txt = txt.replaceAll('&gt;', '>');
 			txt = txt.replaceAll('<br>', '');
-			txt = txt.replaceAll('                    ', '');
-			el.value = txt;*/
+			txt = txt.replaceAll('                    ', '');*/
+			
+			var txt = '';
+			fetch(allTabs[0].src)
+			  .then(res => res.text())
+			  .then(data => {txt = data;});
 
-			fetch(allTabs[i].src)
-  			.then(response => el.value = response.text());
-
+			el.value = txt;
 			document.body.appendChild(el);
 			el.select();
 			document.execCommand("copy");
-			document.body.removeChild(el);  
+			document.body.removeChild(el);
 		}
 	}
 }
